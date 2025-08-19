@@ -1,0 +1,11 @@
+Vrne rotacijski vektor (tudi Axis-Angle vector, enotski vektor, pomnožen s kotom zasuka v radianih), 
+ki ustreza danemu RPY vektorju (rotacije so ekstrinzične okrog X-Y-Z osi). Vrtenje v ravnini. 
+
+def getOrientation(angZ): 
+or_tmp = [2.2, -2.2, 0]
+or_rpy = rotvec2rpy(or_tmp)
+	
+orient = rpy2rotvec([or_rpy[0], or_rpy[1], d2r(angZ)])
+
+return orient
+end
